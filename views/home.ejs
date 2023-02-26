@@ -5,10 +5,10 @@
 <p><%= homeContext %></p>
 
 <% if (postContent.length>0) { %>
-    <% for(let i=0; i<postContent.length;i++) { %>
+    <% for(let i=0; i<postContent.length; i++) { %>
         <h2><%=   postContent[i].title;    %></h2>
         <p>
-            <%=   (postContent[i].content).substring(0,100);  %> ...
+            <%=   (postContent[i].content).substring(0,300);  %> ...
             <a href="/posts/<%=postContent[i].title%>">Read More</a>
         </p>
     <% }  %>
